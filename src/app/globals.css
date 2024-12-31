@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,14 +16,53 @@
   }
 }
 
+
+
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+/* Container to hide overflow */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Track for sliding images */
+.slider-track {
+  display: flex;
+  width: calc(200%); /* Double the width for seamless scrolling */
+  animation: scroll 20s linear infinite; /* Smooth infinite scrolling */
+}
+
+/* Individual slider item styling */
+.slider-item {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust width as per your design */
+  margin: 0 10px;
+}
+
+.slider-item img {
+  width: 100%;
+}
+
+/* Keyframes for seamless animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from the beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* Move exactly one full set of slides */
   }
 }
