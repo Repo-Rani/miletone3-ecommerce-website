@@ -4,7 +4,7 @@ import Trending from './Trending'
 const TrendingCards = () => {
   return (
     <>
-    <div className='relative top-[-200px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-[3px]
+    <div className='relative top-[-625px] md:top-[-230px]  grid grid-cols-1  md:grid-cols-3 xl:grid-cols-5 xxxl:grid-col-6 xxxl:gap-[3px] md:gap-y-[4rem]  lg:gap-y-[3.5rem] sm:gap-y-[1rem]
     '>
         {
 trendingData.map((item) => (

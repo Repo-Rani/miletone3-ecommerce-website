@@ -9,7 +9,7 @@ import FollowUs from "./FollowUs";
 const Hero = () => {
   return (
     <>
-    <div className="h-[4510px]">
+    <div className=" h-[5100px] xl:h-[4565px] xxxl:h-[4665px]">
         {/* Banner */}
         <div>
         <Banner />
@@ -34,10 +34,10 @@ const Hero = () => {
 
         {/* Foloow Us */}
      
-    <div>
+     {/* <div>
       <FollowUs/>
-    </div>
-     
+    </div> */}
+      
       </div>
     
     </>

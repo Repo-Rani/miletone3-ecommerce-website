@@ -6,6 +6,7 @@ import {  EyesProps } from '../../types/type';
 import Link from 'next/link';
 
 const EyesCard = ({
+  
   id,
   image,
   

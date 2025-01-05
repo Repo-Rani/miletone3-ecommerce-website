@@ -14,8 +14,8 @@ const BestSeller = () => {
       ];
   return (
     <>
-    <section className='h-[2000px] w-full'>
-    <aside className='w-[271px] h-[344px] absolute left-[80px] top-[182px] flex flex-col gap-4'>
+    <section className='h-[1820px] w-full'>
+    <aside className='w-[271px] h-[344px] absolute left-[80px] top-[182px] md:flex flex-col gap-4 hidden'>
   <div className='flex flex-row items-start gap-[51px] w-[217px] h-[24px]'>
     <span className='font-playfair font-bold text-[26px]  text-center text-black '>Brows By</span>
     <div className='w-[1px] h-[250px]   absolute top-[-70px] left-[115px] rotate-90 border-black  border-[0.5px] opacity-50   '></div>

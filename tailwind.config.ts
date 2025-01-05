@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       screens: {
         xs: "320px",
         ms: "390px",
@@ -15,8 +16,10 @@ const config: Config = {
         xsm: "425px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
-        xxl: "1440px",
+        xl: "1440px",
+        xxxl: "1484px",
+
+        xxl: "1560px",
       },
       colors: {
         background: "var(--background)",

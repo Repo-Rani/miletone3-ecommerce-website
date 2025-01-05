@@ -1,18 +1,16 @@
 'use client'
 import React, { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing React icons
-
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
+import Image from 'next/image';
 const Contact = () => {
-  // State to track the selected communication method
   const [communicationMethod, setCommunicationMethod] = useState('email');
 
-  // Handle change of radio button
   const handleRadioChange = (event: any) => {
     setCommunicationMethod(event.target.value);
   };
 
   return (
-    <section className='relative top-[200px] h-[1300px]'>
+    <section className='relative top-[200px] h-[2200px] lg:h-[1300px]'>
       <h1 className="font-playfair text-[#735555] text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute top-[-30px] left-[600px]">
         Contact us
       </h1>
@@ -22,9 +20,13 @@ const Contact = () => {
             <div className="lg:mb-0 mb-10">
               <div className="group w-full h-full">
                 <div className="relative h-full">
-                  <img
+                  <Image
                     src="/contact.jpg"
                     alt="ContactUs tailwind section"
+                    height={100}
+                    width={100}
+                    quality={100}
+                    priority
                     className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#735555] object-cover"
                   />
                   <div className="absolute bottom-0 w-full lg:p-11 p-5">

@@ -32,37 +32,62 @@ body {
 }
 
 
-/* Container to hide overflow */
 .slider-container {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
-/* Track for sliding images */
 .slider-track {
   display: flex;
-  width: calc(200%); /* Double the width for seamless scrolling */
-  animation: scroll 20s linear infinite; /* Smooth infinite scrolling */
+  width: calc(200%);
+  animation: scroll 20s linear infinite;
 }
 
-/* Individual slider item styling */
 .slider-item {
   flex: 0 0 auto;
-  width: 200px; /* Adjust width as per your design */
-  margin: 0 10px;
+  width: 361px;
+  margin: 0;
 }
 
 .slider-item img {
   width: 100%;
 }
 
-/* Keyframes for seamless animation */
 @keyframes scroll {
   0% {
-    transform: translateX(0); /* Start from the beginning */
+    transform: translateX(0); 
   }
   100% {
-    transform: translateX(-100%); /* Move exactly one full set of slides */
+    transform: translateX(-100%); 
   }
 }
+
+@media (max-width: 1024px) {
+  .slider-item img {
+    width: 80%; 
+  }
+  .slider-item {
+    margin: -40px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-item img {
+    width: 90%; 
+  }
+  .slider-item {
+    margin: -20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-item img {
+    width: 100%; 
+  }
+  .slider-item {
+    margin: -20px; 
+  }
+}
+
+

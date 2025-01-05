@@ -1,5 +1,4 @@
 import React from "react";
-import { ImSpoonKnife } from "react-icons/im";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { LuInstagram } from "react-icons/lu";
@@ -14,7 +13,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-6">
           <div>
             <span className="text-[16px] md:text-[1.4rem] font-extrabold italic text-white flex items-center font-greatVibes">
-              {/* <ImSpoonKnife className="md:h-7 md:w-7 h-5 w-5 text-white mr-2" /> */}
               BeautySalon
             </span>
           </div>

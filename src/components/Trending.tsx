@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { BestSellerProps, TrendingProps } from '../../types/type'
+import {  TrendingProps } from '../../types/type'
 import { IoIosStar } from "react-icons/io";
 import { useState } from "react";
 import { IoIosStarHalf } from "react-icons/io";
@@ -21,8 +21,10 @@ const Trending = ({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <div className=" relative mx-auto   ">
+
     <div
-      className="w-[300px] h-[350px] flex flex-col items-center px-10  cursor-pointer"
+      className="xxxl:w-[300px] md:w-[290px] sm:w-[370px] w-[320px]  lg:w-[330px] xl:w-[285px] md:h-[350px]  h-[485px] flex flex-col justify-center items-center  px-10 cursor-pointer relative"
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)} 
     >
@@ -34,7 +36,7 @@ const Trending = ({
         alt="product-image"
         width={300}
         height={300}
-        className="hover:scale-110 transition-transform duration-300 ease-in-out mb-5"
+        className=" w-[300px] md:h-[235px] h-[300px] transition-transform duration-300 ease-in-out"
       />
       </Link>
 
@@ -59,12 +61,13 @@ const Trending = ({
         </div> 
       {/* Add to Cart Button */}
       {isHovered && (
-        <button className="relative top-[30px] px-9 py-2 bg-transparent text-black border-[1px] border-black rounded hover:bg-black hover:text-white hover:scale-105 transition-all ease-in-out duration-300">
+        <button className="relative top-[40px] md:top-[50px] md:text-[16px] text-[14px]  px-6 py-2 bg-transparent text-black border-[1px] border-black rounded hover:bg-black hover:text-white hover:scale-105 transition-all ease-in-out duration-300">
           Add to Cart
         </button>
       )}
 
     </div>
+  </div>
   );
 };
 

@@ -45,6 +45,7 @@ export const bestSellerData = [
     ratingNum: 5.8,
     reviews: "(11)",
   },
+  
 ];
 
 export const trendingData = [

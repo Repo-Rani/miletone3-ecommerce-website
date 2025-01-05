@@ -8,7 +8,6 @@ import Link from 'next/link';
 const CardSlider = ({
     id,
   image,
-  
   title,
   ratingNum,
   price,
@@ -17,8 +16,6 @@ const CardSlider = ({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-
-
     <>
       <div
         className="w-[350px] h-[450px] flex flex-col items-center px-10 cursor-pointer relative"
@@ -26,7 +23,7 @@ const CardSlider = ({
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Product Image */}
-        <Link href={`shopallpage/${id}`} passHref>
+        <Link href={`${id}`} passHref>
 
         <Image
           src={ image}
