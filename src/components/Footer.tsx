@@ -45,7 +45,7 @@ const Footer = () => {
             <h4 className="text-white font-semibold font-lato text-lg relative max-sm:cursor-pointer">
               Our Store
             </h4>
-          
+
             <ul className="mt-6 space-y-3 text-gray-400 ">
               {[
                 "500 Terry Francine Street",

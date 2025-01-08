@@ -77,16 +77,16 @@ body {
     width: 90%; 
   }
   .slider-item {
-    margin: -20px; 
+    margin: -80px; 
   }
 }
 
 @media (max-width: 480px) {
   .slider-item img {
-    width: 100%; 
+    width: 70%; 
   }
   .slider-item {
-    margin: -20px; 
+    margin: -80px; 
   }
 }
 

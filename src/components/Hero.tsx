@@ -4,42 +4,40 @@ import DiscoverMore from "./DiscoverMore";
 import Banner from "./Banner";
 import HeroBestSeller from "./HeroBestSeller";
 import HeroTrending from "./HeroTrending";
-import FollowUs from "./FollowUs"; 
+import FollowUs from "./FollowUs";
 
 const Hero = () => {
   return (
     <>
-    <div className=" h-[5100px] xl:h-[4565px] xxxl:h-[4665px]">
+      <div className="h-[6900px] sm:h-[6940px] xsm:h-[6955px] md:h-[4940px] xl:h-[4450px] lg:h-[5090px] xxxl:h-[4625px]">
         {/* Banner */}
         <div>
-        <Banner />
-      </div>
-      {/* Best sellers */}
-      <div>
-        <HeroBestSeller />
-      </div>
-      {/* Shop List */}
-      <div>
-        <ShopLips />
-      </div>
+          <Banner />
+        </div>
+        {/* Best sellers */}
+        <div>
+          <HeroBestSeller />
+        </div>
+        {/* Shop List */}
+        <div>
+          <ShopLips />
+        </div>
 
-      {/* Trending product */}
-      <div>
-        <HeroTrending />
-      </div>
-      {/* DiscoverMore */}
-      <div>
-        <DiscoverMore />
-      </div>
+        {/* Trending product */}
+        <div>
+          <HeroTrending />
+        </div>
+        {/* DiscoverMore */}
+        <div>
+          <DiscoverMore />
+        </div>
 
         {/* Foloow Us */}
-     
-     {/* <div>
-      <FollowUs/>
-    </div> */}
-      
+
+        <div>
+          <FollowUs />
+        </div>
       </div>
-    
     </>
   );
 };

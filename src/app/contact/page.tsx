@@ -10,42 +10,43 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative top-[200px] h-[2200px] lg:h-[1300px]'>
-      <h1 className="font-playfair text-[#735555] text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute top-[-30px] left-[600px]">
+    <section className='relative top-[200px] h-[1500px] xsm:h-[1630px] md:h-[2200px] lg:h-[1300px]'>
+      <h1 className="font-playfair text-[#735555] text-[32px] md:text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute xsm:top-[-50px] top-[-55px] left-[65px] sm:left-[95px] xsm:left-[120px]  md:left-[300px] lg:left-[400px] xl:left-[600px]">
         Contact us
       </h1>
-      <div className="py-24 ">
+      <div className="lg:py-24 md:py-16 xsm:py-12 py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 grid-cols-1">
+        <div className="grid lg:grid-cols-2 lg:gap-[50px] grid-cols-1">
             <div className="lg:mb-0 mb-10">
               <div className="group w-full h-full">
-                <div className="relative h-full">
-                  <Image
-                    src="/contact.jpg"
-                    alt="ContactUs tailwind section"
-                    height={100}
-                    width={100}
-                    quality={100}
-                    priority
-                    className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#735555] object-cover"
-                  />
-                  <div className="absolute bottom-0 w-full lg:p-11 p-5">
-                    <div className="bg-white rounded-lg p-6 block">
-                      <a href="javascript:;" className="flex items-center mb-6">
-                        <FaPhoneAlt size={30} className="text-[#735555]" />
-                        <h5 className="text-black text-base font-normal leading-6 ml-5">
+              <div className="relative h-full">
+        <Image
+          src="/contact.jpg"
+          alt="ContactUs"
+          layout="responsive" 
+          width={1000} 
+          height={600} 
+          quality={100} 
+          priority
+          className="w-full h-full lg:rounded-l-2xl rounded-2xl object-cover"
+        />
+                  <div className="absolute bottom-0 lg:top-[322px] xl:top-[495px] w-full lg:p-11 p-5">
+                    <div className="bg-white rounded-lg sm:p-6  block">
+                      <a href="javascript:;" className="flex items-center mb-6 relative xsm:left-0 left-2">
+                        <FaPhoneAlt size={30} className="text-[#735555] xsm:size-[30px] size-[20px]" />
+                        <h5 className="text-black text-[12px] xsm:text-base font-normal leading-6 ml-5">
                           470-601-1911
                         </h5>
                       </a>
-                      <a href="javascript:;" className="flex items-center mb-6">
-                        <FaEnvelope size={30} className="text-[#735555]" />
-                        <h5 className="text-black text-base font-normal leading-6 ml-5">
+                      <a href="javascript:;" className="flex items-center mb-6 relative xsm:left-0 left-2">
+                        <FaEnvelope size={30} className="text-[#735555] xsm:size-[30px] size-[20px]" />
+                        <h5 className="text-black text-[12px] xsm:text-base font-normal leading-6 ml-5">
                           Pagedone1234@gmail.com
                         </h5>
                       </a>
-                      <a href="javascript:;" className="flex items-center">
-                        <FaMapMarkerAlt size={30} className="text-[#735555]" />
-                        <h5 className="text-black text-base font-normal leading-6 ml-5">
+                      <a href="javascript:;" className="flex items-center relative xsm:left-0 left-2">
+                        <FaMapMarkerAlt size={30} className="text-[#735555] xsm:size-[30px] size-[20px]" />
+                        <h5 className="text-black text-[12px] xsm:text-base font-normal leading-6 ml-5">
                           654 Sycamore Avenue, Meadowville, WA 76543
                         </h5>
                       </a>

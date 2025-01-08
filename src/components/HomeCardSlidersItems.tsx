@@ -1,6 +1,6 @@
-import React from 'react';
-import { followData } from '../../data/data';
-import HomeCardSlider from './HomeCardSlider';
+import React from "react";
+import { followData } from "../../data/data";
+import HomeCardSlider from "./HomeCardSlider";
 
 const HomeCardSlidersItems = () => {
   return (
@@ -8,13 +8,13 @@ const HomeCardSlidersItems = () => {
       <div className="slider-track">
         {followData.map((item) => (
           <div key={item.id} className="slider-item">
-            <HomeCardSlider  image={item.image} id={item.id}  />
+            <HomeCardSlider image={item.image} id={item.id} />
           </div>
         ))}
         {followData.map((item) => (
           <div key={`duplicate-${item.id}`} className="slider-item">
-            <HomeCardSlider  image={item.image} id={item.id}  />
-            </div>
+            <HomeCardSlider image={item.image} id={item.id} />
+          </div>
         ))}
       </div>
     </div>

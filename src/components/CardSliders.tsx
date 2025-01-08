@@ -14,10 +14,10 @@ const CardSliders = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true, 
-    autoplaySpeed: 3000, 
-    nextArrow: <NextArrow onClick={() => {}}/>,
-    prevArrow: <PrevArrow onClick={() => {}}/>,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <NextArrow onClick={() => {}} />,
+    prevArrow: <PrevArrow onClick={() => {}} />,
     responsive: [
       {
         breakpoint: 1280,
@@ -28,7 +28,7 @@ const CardSliders = () => {
       {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
@@ -45,13 +45,13 @@ const CardSliders = () => {
       <Slider {...settings}>
         {shopallData.map((item) => (
           <CardSlider
-          key={item.id}
-          id={item.id}
-          image={item.image}
-          title={item.title}
-          price={item.price}
-          ratingNum={item.ratingNum}
-          reviews={item.reviews}
+            key={item.id}
+            id={item.id}
+            image={item.image}
+            title={item.title}
+            price={item.price}
+            ratingNum={item.ratingNum}
+            reviews={item.reviews}
           />
         ))}
       </Slider>

@@ -10,6 +10,7 @@ import { NavbarPropsType } from "../../types/type";
 import { NavbarLinksType } from "../../types/type";
 import { FiHeart } from "react-icons/fi";
 import { IoMdContact } from "react-icons/io";
+import Image from "next/image";
 
 const Navbar = ({ openNav }: NavbarPropsType) => {
   const navLinks: NavbarLinksType[] = [
@@ -58,8 +59,8 @@ const Navbar = ({ openNav }: NavbarPropsType) => {
         ) : (
           <>
             <div className="flex items-center text-white space-x-2 ">
-              <span className="text-[17px] font-greatvibes xl:text-[1.4rem] md:text-[20px]  font-extrabold italic text-white">
-                <Link href="/">BeautySalon</Link>
+              <span className="text-[17px] font-greatvibes xl:text-[1.4rem] md:text-[20px]  font-extrabold italic tracking-widest text-white">
+                <Link href="/">Beauty Salon</Link>
               </span>
             </div>
             <div className="flex lg:justify-between justify-center gap-0 md:gap-[235px]   md:w-[70%]  lg:gap-0 lg:w-[65%] space-x-10 lg:space-x-8">
@@ -67,7 +68,7 @@ const Navbar = ({ openNav }: NavbarPropsType) => {
                 {navLinks.map((link, index) => (
                   <div
                     key={index}
-                    className="relative group flex items-center" 
+                    className="relative group flex items-center"
                     onMouseEnter={() => setIsContactHovered(true)}
                     onMouseLeave={() => setIsContactHovered(false)}
                   >
@@ -110,44 +111,42 @@ const Navbar = ({ openNav }: NavbarPropsType) => {
                 ))}
               </div>
               <div className="relative md:left-[225px] lg:left-0 flex items-center justify-end gap-[15px] lg:gap-[20px]">
-              <Link
+                <Link
                   href="/signup"
                   className="relative flex items-center justify-center"
                 >
-                <IoMdContact className=" text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[29px] xl:w-[29px] h-[19px] w-[19px]" />
-             </Link>
-              <div className="relative flex items-center">
-                <Link
-                  href="/cart"
-                  className="relative flex items-center justify-center"
-                >
-                  <FaCartArrowDown className="text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[27px] xl:w-[27px] h-[19px] w-[19px]" />
+                  <IoMdContact className=" text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[29px] xl:w-[29px] h-[19px] w-[19px]" />
                 </Link>
-                <div className="absolute -top-[10px] -right-[10px] md:-top-[7px] xl:h-5 xl:w-5 h-4 w-4 rounded-full bg-red-500 flex items-center justify-center">
-                  <span className="text-[10px] text-white">1</span>
+                <div className="relative flex items-center">
+                  <Link
+                    href="/cart"
+                    className="relative flex items-center justify-center"
+                  >
+                    <FaCartArrowDown className="text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[27px] xl:w-[27px] h-[19px] w-[19px]" />
+                  </Link>
+                  <div className="absolute -top-[10px] -right-[10px] md:-top-[7px] xl:h-5 xl:w-5 h-4 w-4 rounded-full bg-red-500 flex items-center justify-center">
+                    <span className="text-[10px] text-white">1</span>
+                  </div>
+                </div>
+
+                <div className="relative flex items-center">
+                  <Link
+                    href="/wishlist"
+                    className="relative flex items-center justify-center"
+                  >
+                    <FiHeart className="text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[27px] xl:w-[27px] h-[19px] w-[19px]" />
+                  </Link>
+
+                  <div className="absolute -top-[10px] -right-[10px] md:-top-[7px] xl:h-5 xl:w-5 h-4 w-4 rounded-full bg-red-500 flex items-center justify-center">
+                    <span className="text-[10px] text-white">2</span>
+                  </div>
                 </div>
               </div>
-
-              <div className="relative flex items-center">
-                <Link
-                  href="/wishlist"
-                  className="relative flex items-center justify-center"
-                >
-                  <FiHeart className="text-white hover:scale-110 cursor-pointer transition-all duration-300 ease-linear md:h-[24px] md:w-[24px] xl:h-[27px] xl:w-[27px] h-[19px] w-[19px]" />
-                </Link>
-
-                <div className="absolute -top-[10px] -right-[10px] md:-top-[7px] xl:h-5 xl:w-5 h-4 w-4 rounded-full bg-red-500 flex items-center justify-center">
-                  <span className="text-[10px] text-white">2</span>
-                </div>
-              </div>
-              </div>
-              
 
               <HiBars3BottomRight
-  onClick={openNav}
-  className="h-6 w-6 cursor-pointer text-white hover:scale-110 transition-all duration-300 ease-linear lg:hidden"
-/>
-
+                onClick={openNav}
+                className="h-6 w-6 cursor-pointer text-white hover:scale-110 transition-all duration-300 ease-linear lg:hidden"
+              />
             </div>
           </>
         )}

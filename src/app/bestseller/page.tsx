@@ -1,73 +1,65 @@
-import React from 'react'
-import Link from 'next/link';
-import Image from 'next/image';
-import BestSellerPage from '@/components/BestSellerPage';
-Image
+import React from "react";
+import Image from "next/image";
+import BestSellerPage from "@/components/BestSellerPage";
+import MenuSidebar from "@/components/MenuSidebar";
 const BestSeller = () => {
-    const sidebarItems = [
-        { href: "/shopall", label: "All Products" },
-        { href: "/bestseller", label: "Best Seller" },
-        { href: "/eyes", label: "Eyes" },
-        { href: "/face", label: "Face" },
-        { href: "/lips", label: "Lips" },
-        { href: "/new", label: "New" },
-      ];
   return (
     <>
-    <section className='h-[1820px] w-full'>
-    <aside className='w-[271px] h-[344px] absolute left-[80px] top-[182px] md:flex flex-col gap-4 hidden'>
-  <div className='flex flex-row items-start gap-[51px] w-[217px] h-[24px]'>
-    <span className='font-playfair font-bold text-[26px]  text-center text-black '>Brows By</span>
-    <div className='w-[1px] h-[250px]   absolute top-[-70px] left-[115px] rotate-90 border-black  border-[0.5px] opacity-50   '></div>
+      <section className="h-[2800px] md:h-[1900px] sm:h-[3200px] xsm:h-[3500px] lg:h-[1650px] xl:h-[1820px] w-full">
+        <MenuSidebar />
 
-  </div>
+        <div className=" absolute xl:left-[380px] xl:top-[182px] lg:top-[180px] left-[250px] hidden lg:flex ">
+          <Image
+            src="/lipstickbigimage.webp"
+            alt="best seller"
+            quality={100}
+            priority
+            height={400}
+            width={1100}
+            className="h-[400px] w-[1100px]"
+          />
+        </div>
+        <div className=" relative    md:top-[160px] top-[100px] lg:hidden ">
+          <Image
+            src="/lipstickbigimage.webp"
+            alt="best seller"
+            quality={100}
+            priority
+            height={400}
+            width={1400}
+            className=" md:w-[550px] h-[250px] relative  md:left-[200px] "
+          />
+        </div>
 
+        <div className="absolute top-[420px] md:top-[650px] md:left-[380px] left-[20px] ">
+          <div className="lg:relative lg:w-full w-0">
+            <h2 className="relative xl:top-0 xxxl:left-[60px] xl:left-[40px] md:left-[-170px] md:top-[-170px] lg:left-[-90px] lg:top-[-90px] lg:text-[48px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair whitespace-nowrap">
+              Best Seller
+            </h2>
+            <div className="flex justify-between relative xl:top-[30px] lg:top-[-40px] xxxl:left-[70px] xl:left-0 lg:left-[-80px] md:top-[-160px] md:left-[-160px] top-[10px] lg:space-x-[450px] whitespace-nowrap xl:space-x-[300px]  md:space-x-[300px] xsm:space-x-[200px] sm:space-x-[120px] space-x-[90px]">
+              <div className=" relative xl:left-[50px] font-lato text-black text-[14px]">
+                6 Products
+              </div>
+              <div className="font-lato text-black text-[14px] flex flex-row md:items-start items-center gap-[10px]">
+                <span>Sort By: Recommended</span>
+                <Image
+                  src="/DropDownvector.svg"
+                  alt="side-vector"
+                  width={14}
+                  height={14}
+                  className="w-[14px] h-[14px] rotate-90"
+                />
+              </div>
+            </div>
+          </div>
 
-  <div className="w-[100px] h-[400px] flex justify-between flex-col relative top-[30px]">
-      {sidebarItems.map((item, index) => (
-        <span key={index}>
-          <Link
-            href={item.href}
-            className="font-lato font-normal text-[18px] text-black hover:underline hover:scale-110 transition-all duration-300 ease-in-out"
-          >
-            {item.label}
-          </Link>
-        </span>
-      ))}
-    </div>
-
-   </aside>
-   <div className=' absolute left-[380px] top-[182px] '>
-
-   
-   <Image src='/lipstickbigimage.webp' alt='best seller' quality={100}  priority height={400} width={1100} className='h-[400px] w-[1100px]'/>
-
-
-    </div>
-    <div className='absolute top-[650px] left-[380px] '>
-
-   
-
-    <div className='relative w-full'>
-  <h2 className='text-[48px] text-black font-bold font-playfair'>Best Seller</h2>
-  <div className="flex justify-between relative top-[30px] space-x-[800px]">
-    <div className='font-lato text-black text-[14px]'>6 Products</div>
-    <div className='font-lato text-black text-[14px] flex flex-row items-start gap-[10px]'><span>Sort By: Recommended</span>
-    <Image src='/DropDownvector.svg' alt='side-vector' width={14} height={14}
-    className='w-[14px] h-[14px] rotate-90' /></div>
-    
-  </div>
-</div>
-
-<div>
-    <BestSellerPage/>
-</div>
-    </div>
-  
-   </section>
+          <div>
+            <BestSellerPage />
+          </div>
+        </div>
+      </section>
     </>
-   
-  )
-}
+  );
+};
 
 export default BestSeller;
