@@ -12,6 +12,7 @@ import { GoCommentDiscussion } from "react-icons/go";
 import CardSliders from "@/components/CardSliders";
 import { shopallData } from "../../../../data/data";
 import { useState } from "react";
+import { ShopallProps } from "../../../../types/type";
 interface Props {
   params: {
     id: string;
@@ -27,7 +28,7 @@ const CardSliderDetails: React.FC<Props> = ({ params }) => {
       };
   const { id } = params;
   const product = shopallData.find(
-    (item: any) => item.id === id || item.id === Number(id)
+  (item: ShopallProps) => item.id === Number(id)
   );
   if (!product) {
     return (
