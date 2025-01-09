@@ -29,7 +29,7 @@ import { useCart } from "@/context/CartContext";
 
     // Show popup
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000); // Hide after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000); 
   };
 
 

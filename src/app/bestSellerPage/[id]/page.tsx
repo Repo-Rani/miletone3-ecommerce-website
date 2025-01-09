@@ -12,6 +12,7 @@ import { FaRegThumbsUp } from "react-icons/fa";
 import { GoCommentDiscussion } from "react-icons/go";
 import CardSliders from "@/components/CardSliders";
 import { useState } from "react";
+import { BestSellerPageProps } from "../../../../types/type";
 
 interface Props {
   params: {
@@ -27,9 +28,10 @@ const BestSellerPageDetails: React.FC<Props> = ({ params }) => {
     setQuantity(value);
   };
   const { id } = params;
-  const product = bestSellerData.find(
-    (item: any) => item.id === id || item.id === Number(id)
-  );
+const product = bestSellerData.find(
+  (item: BestSellerPageProps) => item.id === Number(id)
+);
+
   if (!product) {
     return (
       <section className="w-full h-[1100px]">

@@ -25,12 +25,12 @@ const CartPage = () => {
   );
 
   const handlePlaceOrder = () => {
-    setOrderDetails([...state.items]); // Save current cart items as order details
+    setOrderDetails([...state.items]); 
     setOrderPlaced(true);
   };
 
   const handlePopupToggle = () => {
-    setIsPopupVisible(!isPopupVisible); // Toggle popup visibility
+    setIsPopupVisible(!isPopupVisible); 
   };
 
   return (

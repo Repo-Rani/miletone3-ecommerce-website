@@ -12,6 +12,7 @@ import { GoCommentDiscussion } from "react-icons/go";
 import CardSliders from "@/components/CardSliders";
 import { shopallData } from "../../../../data/data";
 import { useState } from "react";
+import { ShopallProps } from "../../../../types/type";
 interface Props {
   params: {
     id: string;
@@ -27,7 +28,7 @@ const ShopallpageDetails: React.FC<Props> = ({ params }) => {
     };
   const { id } = params;
   const product = shopallData.find(
-    (item: any) => item.id === id || item.id === Number(id)
+  (item: ShopallProps) => item.id === Number(id)
   );
   if (!product) {
     return (
@@ -105,10 +106,10 @@ const ShopallpageDetails: React.FC<Props> = ({ params }) => {
                 />
 
                 <p className="w-[250px] xsm:w-[350px] h-[120px] font-lato text-[16px] lg:text-[18px]  text-black tracking-wide px-6 relative md:top-[30px] md:flex hidden">
-                  I'm a product description. This is a great place to "sell"
-                  your product and grab buyers' attention. Describe your product
+                  I am a product description. This is a great place to sell
+                  your product and grab buyers attention. Describe your product
                   clearly and concisely. Use unique keywords. Write your own
-                  description instead of using manufacturers' copy.
+                  description instead of using manufacturers copy.
                 </p> 
               </div>
 
@@ -180,7 +181,7 @@ const ShopallpageDetails: React.FC<Props> = ({ params }) => {
                     <FaMinus className="text-[12px] font-lato text-gray-400 " />
                   </div>
                   <p className="w-[250px] xsm:w-[350px] h-[100px] font-lato text-[16px] text-black relative top-[145px] xsm:left-[35px] sm:left-0 left-[-20px]">
-                    I'm a product detail. I'm a great place to add more
+                    I am a product detail. I am a great place to add more
                     information about your product such as sizing, material,
                     care and cleaning instructions. This is also a great space
                     to write what makes this product special and how your
