@@ -5,6 +5,7 @@ import { LuInstagram } from "react-icons/lu";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import NewsLetter from "./NewsLetter";
+
 const Footer = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Footer = () => {
             <h4 className="text-white font-semibold font-lato text-lg relative max-sm:cursor-pointer">
               Shop
             </h4>
-            <ul className="mt-6 space-y-3 text-gray-400  ">
+            <ul className="mt-6 space-y-3 text-gray-400">
               {[
                 "All Products",
                 "New",
@@ -29,7 +30,7 @@ const Footer = () => {
                 "Eyes ",
                 "Face",
               ].map((link, index) => (
-                <li>
+                <li key={index}>
                   <Link
                     className="text-[14px] hover:text-white font-lato"
                     key={index}
@@ -46,7 +47,7 @@ const Footer = () => {
               Our Store
             </h4>
 
-            <ul className="mt-6 space-y-3 text-gray-400 ">
+            <ul className="mt-6 space-y-3 text-gray-400">
               {[
                 "500 Terry Francine Street",
                 "San francisco, CA 94158",
@@ -55,10 +56,9 @@ const Footer = () => {
                 "Tel: 123-456-7890",
                 "Email: info@mysite.com",
               ].map((link, index) => (
-                <li>
+                <li key={index}>
                   <Link
                     className="text-[14px] hover:text-white font-lato"
-                    key={index}
                     href="#"
                   >
                     {link}
@@ -72,19 +72,18 @@ const Footer = () => {
               Policy
             </h4>
 
-            <ul className="mt-6 space-y-3 text-gray-400 ">
+            <ul className="mt-6 space-y-3 text-gray-400">
               {[
                 "Shipping & Returns ",
                 "Store Policy ",
                 "Blog",
                 "Payment Methods ",
-                "  FAQ",
+                "FAQ",
               ].map((link, index) => (
-                <li>
+                <li key={index}>
                   <Link
                     href="#"
                     className="text-[14px] hover:text-white font-lato"
-                    key={index}
                   >
                     {link}
                   </Link>
@@ -97,14 +96,13 @@ const Footer = () => {
               Customer Service
             </h4>
 
-            <ul className="mt-6 space-y-3 text-gray-400 ">
-              {["    Tel: 123-456-7890", "Email: info@mysite.com"].map(
+            <ul className="mt-6 space-y-3 text-gray-400">
+              {["Tel: 123-456-7890", "Email: info@mysite.com"].map(
                 (link, index) => (
-                  <li>
+                  <li key={index}>
                     <Link
                       href="#"
                       className="text-[14px] hover:text-white font-lato"
-                      key={index}
                     >
                       {link}
                     </Link>
@@ -113,7 +111,7 @@ const Footer = () => {
               )}
             </ul>
 
-            <ul className="mt-10 flex space-x-5 ">
+            <ul className="mt-10 flex space-x-5">
               <li>
                 <FaFacebookSquare className="md:h-[24px] h-[20px] w-[20px] md:w-[24px] text-gray-300 hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#735555] cursor-pointer" />
               </li>
@@ -130,7 +128,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <hr className="my-10 border-gray-400 " />
+        <hr className="my-10 border-gray-400" />
         <div className="flex flex-wrap max-md:flex-col gap-4">
           <ul className="md:flex md:space-x-6 max-md:space-y-2">
             <li>

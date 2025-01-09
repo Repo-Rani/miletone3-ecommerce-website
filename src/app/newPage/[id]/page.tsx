@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { bestSellerData } from "../../../../data/data";
 import Link from "next/link";
 import { IoIosStar } from "react-icons/io";
 import { GoHeart } from "react-icons/go";

@@ -10,7 +10,6 @@ import { NavbarPropsType } from "../../types/type";
 import { NavbarLinksType } from "../../types/type";
 import { FiHeart } from "react-icons/fi";
 import { IoMdContact } from "react-icons/io";
-import Image from "next/image";
 
 const Navbar = ({ openNav }: NavbarPropsType) => {
   const navLinks: NavbarLinksType[] = [

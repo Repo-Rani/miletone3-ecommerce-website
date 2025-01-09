@@ -347,7 +347,7 @@ const ShopallpageDetails: React.FC<Props> = ({ params }) => {
               <p className="w-[250px] sm:w-[350px] md:w-[700px] h-[40px]text-[14px] font-lato text-[#000000] relative top-[15px] ">
                 A friend recommended this item for me a few weeks ago. Was a bit
                 skeptical at first but all the great reviews convinced me to try
-                it. Gotta say, I'm glad I listened! The product was packaged
+                it. Gotta say, I am glad I listened! The product was packaged
                 well, arrived on time and the quality was great for this price
                 range.{" "}
               </p>

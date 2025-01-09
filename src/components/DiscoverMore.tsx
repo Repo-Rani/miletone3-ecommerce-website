@@ -94,7 +94,7 @@ const DiscoverMore = () => {
 
             <div className="relative md:top-[-420px] xl:top-[-440px] md:left-0 top-[-380px] xsm:top-[-400px]  flex flex-col  justify-between md:px-0 px-14 ">
               <p className=" font-lato text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] tracking-normal text-white w-[200px] md:w-[400px] lg:w-[500px] h-[180px] relative lg:px-0 md:px-10">
-                I'm a paragraph. Click here to add your own text and edit me. It
+                I am a paragraph. Click here to add your own text and edit me. It
                 is easy. Just click “Edit Text” or double click me to add your
                 own content and make changes to the font. Feel free to drag and
                 drop me anywhere you like on your page. I am a great place for

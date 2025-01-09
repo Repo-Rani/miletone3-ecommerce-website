@@ -16,7 +16,7 @@ const ShopLips = () => {
             in Town{" "}
           </h1>
           <p className="relative top-[-165px] md:top-[-100px] lg:top-[-65px] text-[12px] md:text-[18px] font-lato text-white">
-            I'm a paragraph. Click here to add your own text and edit me. I am a
+            I am a paragraph. Click here to add your own text and edit me. I am a
             great place for you to tell a story and let your users know a little
             more about you.
           </p>

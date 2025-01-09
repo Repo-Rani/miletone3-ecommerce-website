@@ -5,8 +5,8 @@ import Image from 'next/image';
 const Contact = () => {
   const [communicationMethod, setCommunicationMethod] = useState('email');
 
-  const handleRadioChange = (event: any) => {
-    setCommunicationMethod(event.target.value);
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCommunicationMethod(event.target.value); 
   };
 
   return (

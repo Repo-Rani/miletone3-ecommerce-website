@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FollowProps } from "../../types/type";
 
-const HomeCardSlider = ({ id, image }: FollowProps) => {
+const HomeCardSlider = ({  image }: FollowProps) => {
   return (
     <div className="relative  group">
       {/* Image */}
