@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ResponsiveNavbar } from "@/components/ResponiveNavbar";
 import Footer from "@/components/Footer";
+import { CartProvider } from "@/context/CartContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +34,7 @@ export default function RootLayout({
       >
         <Header/>
         <ResponsiveNavbar/>
-        {children}
+        <CartProvider>{children}</CartProvider>
         <Footer/>
         
       </body>

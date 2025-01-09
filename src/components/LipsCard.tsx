@@ -4,6 +4,7 @@ import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import Image from "next/image";
 import { EyesProps } from "../../types/type";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 const LipsCard = ({
   id,
@@ -14,7 +15,20 @@ const LipsCard = ({
   price,
   reviews,
 }: EyesProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+const [isHovered, setIsHovered] = useState(false);
+  const [showPopup, setShowPopup] = useState(false); // Popup state
+  const { dispatch } = useCart();
+
+  const handleAddToCart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: { id, title, price, image, quantity: 1 },
+    });
+
+    // Show popup
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 3000); // Hide after 3 seconds
+  };
 
   return (
     <>
@@ -54,12 +68,49 @@ const LipsCard = ({
         </div>
 
         {/* Add to Cart Button */}
-        {isHovered && (
-          <button className="relative top-[40px]  md:top-[50px] md:text-[16px] text-[12px]  md:px-6 px-5 py-2 bg-transparent text-black border-[1px] border-black rounded hover:bg-black hover:text-white hover:scale-105 transition-all ease-in-out duration-300">
+
+          {/* Add to Cart Button */}
+          {isHovered && (
+          <button
+            onClick={handleAddToCart}
+            className="relative top-[40px] md:top-[50px] md:text-[16px] text-[12px] md:px-6 px-5 py-2 bg-transparent text-black border-[1px] border-black rounded hover:bg-black hover:text-white hover:scale-105 transition-all ease-in-out duration-300"
+          >
             Add to Cart
           </button>
         )}
+         {/* Popup */}
+          {/* Popup */}
+          {showPopup && (
+  <div className="fixed top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#735555] to-[#6b3a3a] text-white px-6 py-4 rounded-2xl shadow-2xl animate__animated animate__fadeIn animate__delay-3s max-w-[300px] w-full transition-all duration-500 z-50">
+    <div className="flex flex-col items-center">
+      {/* Success Icon */}
+      <div className="mb-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-8 h-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
       </div>
+      <p className="text-lg font-semibold mb-3">Item added to cart!</p>
+      <Link href="/cart">
+        <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-[#735555] hover:text-white transition-all duration-300 shadow-md transform hover:scale-105">
+          View Cart
+        </button>
+      </Link>
+    </div>
+  </div>
+)}
+
+</div>
     </>
   );
 };

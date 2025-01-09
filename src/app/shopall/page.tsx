@@ -33,7 +33,7 @@ const ShopAllPage = () => {
    
 
     <div className='lg:relative lg:w-full w-0'>
-  <h2 className='relative xl:top-0 xxxl:left-[60px] xl:left-[40px] md:left-[-170px] md:top-[-210px] lg:left-[-125px] lg:top-[-60px] lg:text-[48px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair whitespace-nowrap xsm:top-[-60px]  top-[-50px]'>Best Seller</h2>
+  <h2 className='relative xl:top-0 xxxl:left-[60px] xl:left-[40px] md:left-[-170px] md:top-[-210px] lg:left-[-125px] lg:top-[-60px] lg:text-[48px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair whitespace-nowrap xsm:top-[-60px]  top-[-50px]'>Shop All</h2>
   <div className="flex justify-between relative xl:top-[30px] lg:top-[-40px] xxxl:left-[70px] xl:left-0 lg:left-[-80px] md:top-[-160px] md:left-[-160px] top-[-30px] xsm:top-[]  lg:space-x-[450px] whitespace-nowrap xl:space-x-[300px]  md:space-x-[300px] xsm:space-x-[200px] sm:space-x-[120px] space-x-[80px]">
     <div className=' relative xl:left-[50px] font-lato text-black text-[14px]'>6 Products</div>
     <div className='font-lato text-black text-[14px] flex flex-row md:items-start items-center gap-[10px]'><span>Sort By: Recommended</span>
