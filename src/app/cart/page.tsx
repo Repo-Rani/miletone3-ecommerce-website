@@ -58,7 +58,6 @@ const CartPage = () => {
                 key={item.id}
                 className="flex items-center gap-4 bg-white shadow-md rounded-lg p-4 border border-gray-200"
               >
-                {/* Product Image */}
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -66,7 +65,6 @@ const CartPage = () => {
                   height={80}
                   className="rounded-md"
                 />
-                {/* Product Details */}
                 <div className="flex-1">
                   <h2 className="text-lg font-medium text-gray-800">
                     {item.title}
@@ -94,7 +92,6 @@ const CartPage = () => {
                     </button>
                   </div>
                 </div>
-                {/* Remove Button */}
                 <button
                   onClick={() =>
                     dispatch({ type: "REMOVE_FROM_CART", payload: item.id })
@@ -108,7 +105,6 @@ const CartPage = () => {
           </div>
         )}
 
-        {/* Total Section */}
         {state.items.length > 0 && !orderPlaced && (
           <div className="mt-8 bg-white shadow-lg rounded-lg p-6 border border-gray-200 relative sm:left-0 left-[20px]">
             <div className="flex justify-between text-lg font-semibold text-gray-800 mb-4">
@@ -132,7 +128,6 @@ const CartPage = () => {
           </div>
         )}
 
-        {/* Order Confirmation Message */}
         {orderPlaced && (
           <div className="mt-6 bg-black-100 text-white p-4 rounded-lg text-center font-playfair">
             <p className="text-lg font-semibold">
@@ -147,7 +142,6 @@ const CartPage = () => {
           </div>
         )}
 
-        {/* Order Details Section */}
         {orderPlaced && orderDetails.length > 0 && (
           <div className="mt-8 space-y-6">
             <h2 className="text-2xl pl-4 font-bold text-gray-800">
@@ -178,14 +172,17 @@ const CartPage = () => {
         )}
       </div>
 
-      {/* View Cart Button */}
       {!orderPlaced && (
-        <button
-          onClick={handlePopupToggle}
-          className="relative top-[170px] xxxl:left-[700px] xl:left-[690px] lg:left-[460px] md:left-[330px] xsm:left-[150px] sm:left-[130px] left-[110px] px-4 py-2 bg-[#735555] text-white rounded-lg hover:bg-white hover:border-[1px] hover:border-[#735555] hover:text-[#735555] transition duration-300"
-        >
-          <Link href="/shopall">Back to Shop</Link>
-        </button>
+       <button
+       onClick={handlePopupToggle}
+       className={`bg-[#735555] text-white hover:bg-white hover:text-[#735555] hover:border-[#735555]  px-4 py-2 rounded-lg transition duration-300 ${
+         orderPlaced
+           ? "relative top-[170px] xxxl:left-[700px] xl:left-[710px] lg:left-[460px] md:left-[330px] xsm:left-[150px] sm:left-[130px] left-[110px]"
+           : "relative md:top-[180px] xsm:top-[170px] top-[-40px] xxxl:left-[700px] xl:left-[645px] lg:left-[440px] md:left-[300px] xsm:left-[140px] sm:left-[110px] left-[100px]"
+       }`}
+     >
+       <Link href="/shopall">Back to Shop</Link>
+     </button>
       )}
     </section>
   );

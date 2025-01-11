@@ -2,7 +2,18 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import Image from 'next/image';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Contact = () => {
+   useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease",
+          once: true,
+          anchorPlacement: "top-bottom",
+        });
+      }, []);
   const [communicationMethod, setCommunicationMethod] = useState('email');
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,7 +22,7 @@ const Contact = () => {
 
   return (
     <section className='relative top-[200px] h-[1500px] xsm:h-[1630px] md:h-[2200px] lg:h-[1300px]'>
-      <h1 className="font-playfair text-[#735555] text-[32px] md:text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute xsm:top-[-50px] top-[-55px] left-[65px] sm:left-[95px] xsm:left-[120px]  md:left-[300px] lg:left-[400px] xl:left-[600px]">
+      <h1 data-aos="flip-up"  data-aos-delay="200" className="font-playfair text-[#735555] text-[32px] md:text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute xsm:top-[-50px] top-[-55px] left-[65px] sm:left-[95px] xsm:left-[120px]  md:left-[300px] lg:left-[400px] xl:left-[600px]">
         Contact us
       </h1>
       <div className="lg:py-24 md:py-16 xsm:py-12 py-8">
@@ -31,7 +42,7 @@ const Contact = () => {
           className="w-full h-full lg:rounded-l-2xl rounded-2xl object-cover"
         />
                   <div className="absolute bottom-0 lg:top-[322px] xl:top-[495px] w-full lg:p-11 p-5">
-                    <div className="bg-white rounded-lg sm:p-6  block">
+                    <div data-aos="flip-up"  data-aos-delay="200" className="bg-white rounded-lg sm:p-6  block">
                       <a href="javascript:;" className="flex items-center mb-6 relative xsm:left-0 left-2">
                         <FaPhoneAlt size={30} className="text-[#735555] xsm:size-[30px] size-[20px]" />
                         <h5 className="text-black text-[12px] xsm:text-base font-normal leading-6 ml-5">
@@ -57,7 +68,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-              <h1 className="font-manrope text-black text-4xl font-bold leading-10 mb-8">
+              <h1 data-aos="fade-right"  data-aos-delay="200" className="font-manrope text-black text-4xl font-bold leading-10 mb-8">
                 Lets talk
               </h1>
               <form>

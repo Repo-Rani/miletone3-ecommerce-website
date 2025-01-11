@@ -38,7 +38,8 @@ import { useCart } from "@/context/CartContext";
   return (
     <div className="best-seller relative mx-auto   ">
       
-      <div
+      <div data-aos="flip-left" data-aos-delay="200"
+
         className="xxxl:w-[300px] md:w-[265px] sm:w-[375px] w-[320px]  lg:w-[330px] xl:w-[285px] md:h-[350px]  h-[425px] flex flex-col justify-center items-center  px-10 cursor-pointer relative "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

@@ -6,13 +6,13 @@ const Login = () => {
   return (
     <>
      <section className="relative top-[100px] h-[1000px]">
-      <div className="w-[300px] md:w-[424px] h-[564px] absolute  md:top-[100px] md:left-[530px] left-[50px]   shadow-2xl shadow-[#E0E0E0]">
+      <div className="w-[300px] md:w-[424px] h-[564px] absolute  md:top-[100px] md:left-[530px] left-[50px] bg-white border-[1px] border-gray-300   shadow-2xl shadow-[#E0E0E0]">
         <h1 className="text-[18px] md:text-[20px] font-bold font-helvetica relative top-[35px] left-[35px] text-[#333333]">
           Login
         </h1>
         <div className="relative top-[-48px]">
           <div className="w-[220px] md:w-[360px] h-[44px] flex justify-start items-center gap-[10px] pl-[14px] relative top-[117px] left-[35px] border-[#E0E0E0] border-[1px]">
-            <FaEnvelope className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#4F4F4F]" />
+            <FaEnvelope className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#735555]" />
             <input
               type="text"
               className="border-none outline-none text-[12px] md:text-[16px] font-normal text-[#4F4F4F] font-helvetica"
@@ -20,7 +20,7 @@ const Login = () => {
             />
           </div>
           <div className="w-[220px] md:w-[360px] h-[44px] flex justify-start items-center gap-[10px] pl-[14px] relative top-[133px] left-[35px] border-[#E0E0E0] border-[1px]">
-            <FaLock className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#4F4F4F]" />
+            <FaLock className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#735555]" />
             <input
               type="text"
               className="border-none outline-none text-[12px] md:text-[16px] font-normal text-[#4F4F4F] font-helvetica"
@@ -54,13 +54,13 @@ const Login = () => {
               <span className="border-b-[1px] w-[100px]  md:w-[168px]  border-[#E0E0E0]"></span>
             </div>
             <div className="w-[220px] md:w-[360px] h-[44px] border-[#E0E0E0] border-[1px] flex justify-start gap-[35px] md:gap-[75px] items-center  pl-[14px]">
-              <FaGoogle className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#4F4F4F]" />
+              <FaGoogle className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#735555]" />
               <p className="font-normal text-[14px] md:text-[16px] font-helvetica text-[#4F4F4F] text-center whitespace-nowrap">
                 Sign up with Google
               </p>
             </div>
             <div className="w-[220px] md:w-[360px] h-[44px] border-[#E0E0E0] border-[1px] flex justify-start gap-[35px] md:gap-[75px] items-center  pl-[14px]">
-              <FaApple className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#4F4F4F]" />
+              <FaApple className="md:h-[24px] md:w-[24px] w-[20px] h-[20px] text-[#735555]" />
               <p className="font-normal text-[14px] md:text-[16px]  font-helvetica text-[#4F4F4F] text-center">
                 Sign up with Apple
               </p>

@@ -1,8 +1,22 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Face from "@/components/Face";
 import MenuSidebar from "@/components/MenuSidebar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const FacePage = () => {
+
+   useEffect(() => {
+          AOS.init({
+            duration: 1000,
+            easing: "ease",
+            once: true,
+            anchorPlacement: "top-bottom",
+          });
+        }, []);
   return (
     <>
       <section className="h-[2900px] md:h-[2000px]  xsm:h-[3050px] lg:h-[1750px] xl:h-[1820px] w-full">
@@ -33,7 +47,8 @@ const FacePage = () => {
 
         <div className="absolute top-[420px] md:top-[650px] md:left-[380px] left-[20px] ">
           <div className="lg:relative lg:w-full w-0">
-            <h2 className="relative w-[250px] xsm:top-[-50px]  sm:top-[-50px] xl:top-[-60px]  xxxl:left-[-60px]  xl:left-[-60px] md:left-[-190px] md:top-[-220px] lg:left-[-130px] lg:top-[-60px] lg:text-[48px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair whitespace-nowrap">
+            <h2  data-aos="fade-right"
+        data-aos-delay="200"  className="relative w-[250px] xsm:top-[-50px]  sm:top-[-50px] xl:top-[-60px]  xxxl:left-[-60px]  xl:left-[-60px] md:left-[-190px] md:top-[-220px] lg:left-[-130px] lg:top-[-60px] lg:text-[48px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair whitespace-nowrap">
              Face
             </h2>
             <div className="flex justify-between relative xsm:top-[-30px] sm:top-[-35px] xl:top-[-30px] lg:top-[-40px] xxxl:left-[-90px] xl:left-[-70px] lg:left-[-80px] md:top-[-190px] md:left-[-190px] top-[10px] lg:space-x-[450px] whitespace-nowrap xl:space-x-[300px]  md:space-x-[300px] xsm:space-x-[200px] sm:space-x-[120px] space-x-[90px]">

@@ -1,8 +1,22 @@
+'use client'
 import React from 'react'
 import Image from 'next/image';
 import Lips from '@/components/Lips';
 import MenuSidebar from '@/components/MenuSidebar';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const LipsPage = () => {
+
+   useEffect(() => {
+          AOS.init({
+            duration: 1000,
+            easing: "ease",
+            once: true,
+            anchorPlacement: "top-bottom",
+          });
+        }, []);
 
    
   return (
@@ -31,7 +45,8 @@ const LipsPage = () => {
    
 
     <div className='lg:relative lg:w-full w-0'>
-    <h2 className='relative xl:top-0 w-[250px] xxxl:left-[-60px] xxxl:top-[-50px] xl:left-[40px] md:left-[-170px] md:top-[-210px] lg:left-[-120px] lg:top-[-60px] lg:text-[48px] xsm:top-0 sm:top-[-50px] top-[-50px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair xsm:top-[-70px]whitespace-nowrap'>Lips</h2>
+    <h2  data-aos="fade-right"
+        data-aos-delay="200"  className='relative xl:top-0 w-[250px] xxxl:left-[-60px] xxxl:top-[-50px] xl:left-[40px] md:left-[-170px] md:top-[-210px] lg:left-[-120px] lg:top-[-60px] lg:text-[48px] xsm:top-0 sm:top-[-50px] top-[-50px] xsm:text-[32px] text-[30px] text-black font-bold font-playfair xsm:top-[-70px]whitespace-nowrap'>Lips</h2>
     <div className="flex justify-between relative xl:top-[30px] lg:top-[-40px] xxxl:top-[-20px] xxxl:left-[-80px] xl:left-0 lg:left-[-80px] md:top-[-180px] xsm:top-0 sm:top-[-30px]  md:left-[-160px] top-[-30px] lg:space-x-[450px] whitespace-nowrap xl:space-x-[300px]  md:space-x-[300px] xsm:space-x-[200px] sm:space-x-[120px] space-x-[90px]">
     <div className=' relative xl:left-[50px] font-lato text-black text-[14px]'>6 Products</div>
     <div className='font-lato text-black text-[14px] flex flex-row md:items-start items-center gap-[10px]'><span>Sort By: Recommended</span>

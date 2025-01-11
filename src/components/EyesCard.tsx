@@ -16,7 +16,7 @@ const EyesCard = ({
   reviews,
 }: EyesProps) => {
  const [isHovered, setIsHovered] = useState(false);
-  const [showPopup, setShowPopup] = useState(false); // Popup state
+  const [showPopup, setShowPopup] = useState(false); 
   const { dispatch } = useCart();
 
   const handleAddToCart = () => {
@@ -27,17 +27,16 @@ const EyesCard = ({
 
     // Show popup
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000); // Hide after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000); 
   };
 
   return (
     <>
-      <div
+      <div data-aos="flip-left" data-aos-delay="200"
         className="md:w-[350px] md:h-[450px] xsm:h-[300px]  h-[280px] sm:h-[285px] w-[300px] flex flex-col items-center px-10 cursor-pointer relative mx-auto"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Product Image */}
         <Link href={`eyePage/${id}`} passHref>
           <Image
             src={image}
@@ -48,7 +47,6 @@ const EyesCard = ({
           />
         </Link>
 
-        {/* Product Details */}
         <h3 className="text-[18px] font-lato font-medium text-black whitespace-nowrap">
           {title}
         </h3>
@@ -67,7 +65,6 @@ const EyesCard = ({
           </div>
         </div>
 
-        {/* Add to Cart Button */}
         {isHovered && (
           <button
             onClick={handleAddToCart}
@@ -77,37 +74,35 @@ const EyesCard = ({
           </button>
         )}
 
-        {/* Popup */}
-         {/* Popup */}
          {showPopup && (
   <div className="fixed top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#735555] to-[#6b3a3a] text-white px-6 py-4 rounded-2xl shadow-2xl animate__animated animate__fadeIn animate__delay-3s max-w-[300px] w-full transition-all duration-500 z-50">
-    <div className="flex flex-col items-center">
-      {/* Success Icon */}
-      <div className="mb-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-8 h-8 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M5 13l4 4L19 7"
-          />
-        </svg>
-      </div>
-      <p className="text-lg font-semibold mb-3">Item added to cart!</p>
-      <Link href="/cart">
-        <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-[#735555] hover:text-white transition-all duration-300 shadow-md transform hover:scale-105">
-          View Cart
-        </button>
-      </Link>
+  <div className="flex flex-col items-center">
+    <div className="mb-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-8 h-8 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
     </div>
+    <p className="text-lg font-semibold mb-3">Item added to cart!</p>
+    <Link href="/cart">
+      <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-[#735555] hover:text-white transition-all duration-300 shadow-md transform hover:scale-105">
+        View Cart
+      </button>
+    </Link>
   </div>
+</div>
 )}
+
 
 </div>
     </>
