@@ -5,7 +5,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <>
-      <div className="relative  md:w-full h-[50vh] sm:h-screen xxl:top-[115px] xl:top-[108px]  md:top-[105px] ">
+      <div className="relative  md:w-full h-screen xxl:top-[115px] xl:top-[108px]  md:top-[105px] ">
         <div className="hidden md:block">
           <Image
             src="/hero-image.avif"
