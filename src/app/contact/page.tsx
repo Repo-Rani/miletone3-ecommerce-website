@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <section className='relative top-[200px] h-[1500px] xsm:h-[1630px] md:h-[2200px] lg:h-[1300px]'>
-      <h1 data-aos="flip-up"  data-aos-delay="200" className="font-playfair text-[#735555] text-[32px] md:text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute xsm:top-[-50px] top-[-55px] left-[65px] sm:left-[95px] xsm:left-[120px]  md:left-[300px] lg:left-[400px] xl:left-[600px]">
+      <h1 data-aos="flip-up"  data-aos-delay="200" className="font-playfair text-[#735555] text-[32px] md:text-5xl font-bold w-[150px] whitespace-nowrap leading-10 absolute xsm:top-[-50px] top-[-50px] left-[68px] sm:left-[95px] xsm:left-[120px]  md:left-[300px] lg:left-[400px] xl:left-[600px]">
         Contact us
       </h1>
       <div className="lg:py-24 md:py-16 xsm:py-12 py-8">
