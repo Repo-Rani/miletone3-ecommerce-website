@@ -26,7 +26,7 @@ const Trending = ({ id, image, title, ratingNum, price, reviews }: TrendingProps
   return (
     <div className="relative mx-auto">
       <div data-aos="flip-left" data-aos-delay="200"
-        className="xxxl:w-[300px] md:w-[265px] sm:w-[370px] w-[300px] lg:w-[330px] xl:w-[285px] md:h-[340px] h-[432px] flex flex-col justify-center items-center px-10 cursor-pointer relative"
+        className="xxxl:w-[300px] md:w-[265px] sm:w-[370px] w-[320px] lg:w-[330px] xl:w-[285px] md:h-[340px] h-[432px] flex flex-col justify-center items-center px-10 cursor-pointer relative"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
