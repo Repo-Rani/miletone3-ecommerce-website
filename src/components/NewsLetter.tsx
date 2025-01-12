@@ -14,13 +14,13 @@ const NewsLetter = () => {
               Join to get exclusive offers & discounts.
             </p>
           </div>
-          <div className="flex justify-center relative xl:left-[-320px] xxxl:left-[-330px] lg:top-[50px]  md:left-[40px] lg:left-[-200px] gap-[10px] md:px-0 px-5 mt-6">
+          <div className="flex justify-center w-[300px] sm:w-0 relative xl:left-[-320px] xxxl:left-[-330px] lg:top-[50px]  md:left-[40px] lg:left-[-200px] gap-[10px] md:px-0 px-8 mt-6">
             <input
               type="text"
               className="lg:w-[400px] lg:h-[60px] md:w-[250px] w-[180px] h-[40px] bg-white rounded-[7px] text-black/65 xl:text-[15px] text-[12px] font-normal px-6 outline-none border-none font-lato"
               placeholder="Email"
             />
-            <button className="xl:w-[200px]  lg:w-[140px] lg:h-[60px] xl:h-[60px] w-[110px] whitespace-nowrap h-[40px] bg-px-5 py-3 rounded-[7px] text-white bg-[#735555] border-white border-[1px] lg:text-[14px] xl:text-[17px] text-[10px] font-normal flex items-center justify-center gap-[10px] hover:bg-gray-900 transition-all duration-300 ease-linear font-roboto">
+            <button className="xl:w-[200px]  lg:w-[140px] lg:h-[60px] xl:h-[60px] w-[110px] whitespace-nowrap h-[40px] px-2 py-3 rounded-[7px] text-white bg-[#735555] border-white border-[1px] lg:text-[14px] xl:text-[17px] text-[10px] font-normal flex items-center justify-center gap-[10px] hover:bg-gray-900 transition-all duration-300 ease-linear font-roboto">
               <BsFillSendFill className="h-[20px] w-[20px] text-white" />
               Subscribe Now
             </button>
