@@ -58,7 +58,7 @@ const Navbar = ({ openNav }: NavbarPropsType) => {
         ) : (
           <>
             <div className="flex items-center text-white space-x-2 ">
-              <span className="text-[17px] font-greatvibes xl:text-[1.4rem] md:text-[20px]  font-extrabold italic tracking-widest text-white">
+              <span className="text-[17px] font-greatvibes xl:text-[1.4rem] md:text-[20px]  font-extrabold italic tracking-wider text-white whitespace-nowrap">
                 <Link href="/">Beauty Salon</Link>
               </span>
             </div>

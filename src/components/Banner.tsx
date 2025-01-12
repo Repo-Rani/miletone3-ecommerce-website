@@ -33,7 +33,7 @@ const Banner = () => {
       
         data-aos="fade-right"
         data-aos-delay="200"
-      className="relative left-[15px] top-[-465px] sm:left-[20px] sm:top-[-430px]  xxl:left-[230px] lg:left-[110px]  md:left-[100px] md:top-[-410px] xxxl:left-[220px] xxxl:top-[-480px] xxl:top-[-460px] xl:top-[-400px] xl:left-[240px] lg:top-[-420px] tracking-wide font-lato text-[12px] xsm:text-[14px] md:text-[16px] text-white">
+      className="relative left-[15px] top-[-440px] sm:left-[20px] sm:top-[-430px]  xxl:left-[230px] lg:left-[110px]  md:left-[100px] md:top-[-410px] xxxl:left-[220px] xxxl:top-[-480px] xxl:top-[-460px] xl:top-[-400px] xl:left-[240px] lg:top-[-420px] tracking-wide font-lato text-[12px] xsm:text-[14px] md:text-[16px] text-white">
         NEW RELEASE
       </span>
       <h1
@@ -53,7 +53,7 @@ const Banner = () => {
       <button
        data-aos="fade-right"
         data-aos-delay="300"
-      className="md:w-[130px] md:h-[45px] w-[65px] h-[25px] relative left-[15px]  sm:left-[20px] sm:top-[-440px] top-[-35px] md:left-[95px] xxxl:left-[220px] xxxl:top-[-420px] xxl:left-[210px] xxl:top-[-380px] xl:top-[-345px] xl:left-[235px] md:text-[18px] text-[12px]  lg:left-[108px]  md:top-[-380px] lg:top-[-360px] hover:bg-white hover:text-[#735555] hover:scale-105 duration-300 transition-all ease-in-out border-[2px] border-white  bg-transparent text-white rounded-sm">
+      className="md:w-[130px] md:h-[45px] w-[65px] h-[25px] relative left-[20px]  sm:left-[20px] sm:top-[-440px] top-[-455px] md:left-[95px] xxxl:left-[220px] xxxl:top-[-420px] xxl:left-[210px] xxl:top-[-380px] xl:top-[-345px] xl:left-[235px] md:text-[18px] text-[12px]  lg:left-[108px]  md:top-[-380px] lg:top-[-360px] hover:bg-white hover:text-[#735555] hover:scale-105 duration-300 transition-all ease-in-out border-[2px] border-white  bg-transparent text-white rounded-sm">
         <Link href="/shopall"> Shop</Link>
       </button>
     </>
