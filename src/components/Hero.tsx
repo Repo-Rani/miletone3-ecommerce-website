@@ -9,7 +9,7 @@ import FollowUs from "./FollowUs";
 const Hero = () => {
   return (
     <>
-      <div className="h-[6900px] sm:h-[6940px] xsm:h-[6955px] md:h-[4940px] xl:h-[4450px] lg:h-[5090px] xxxl:h-[4625px]">
+      <div className="h-[6900px] min-h-screen sm:h-[6940px] xsm:h-[6955px] md:h-[4940px] xl:h-[4450px] lg:h-[5090px] xxxl:h-[4625px]">
         {/* Banner */}
         <div>
           <Banner />
