@@ -70,7 +70,7 @@ const CartPage = () => {
                     {item.title}
                   </h2>
                   <p className="text-gray-600">${item.price}</p>
-                  <div className="flex items-center relative xl:left-[600px] lg:left-[350px] md:left-[320px] md:top-[-20px] top-[5px] w-[200px] ">
+                  <div className="flex items-center relative xl:left-[600px] lg:left-[350px] md:left-[320px] md:top-[-20px] top-[2px] w-[200px] ">
                     <button
                       onClick={() =>
                         dispatch({ type: "DECREASE_QUANTITY", payload: item.id })
@@ -178,7 +178,7 @@ const CartPage = () => {
        className={`bg-[#735555] text-white hover:bg-white hover:text-[#735555] hover:border-[#735555]  px-4 py-2 rounded-lg transition duration-300 ${
          orderPlaced
            ? "relative top-[170px] xxxl:left-[700px] xl:left-[710px] lg:left-[460px] md:left-[330px] xsm:left-[150px] sm:left-[130px] left-[110px]"
-           : "relative md:top-[180px] xsm:top-[170px] top-[-40px] xxxl:left-[700px] xl:left-[645px] lg:left-[440px] md:left-[300px] xsm:left-[140px] sm:left-[110px] left-[100px]"
+           : "relative md:top-[180px] xsm:top-[170px] top-[-20px] xxxl:left-[700px] xl:left-[645px] lg:left-[440px] md:left-[300px] xsm:left-[140px] sm:left-[110px] left-[100px]"
        }`}
      >
        <Link href="/shopall">Back to Shop</Link>
