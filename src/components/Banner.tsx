@@ -5,7 +5,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <>
-      <div className="relative  md:w-full h-screen xxl:top-[115px] xl:top-[108px]  md:top-[105px] ">
+      <div className="relative  md:w-full min-h-screen sm:h-screen xxl:top-[115px] xl:top-[108px]  md:top-[105px] ">
         <div className="hidden md:block">
           <Image
             src="/hero-image.avif"
@@ -33,7 +33,7 @@ const Banner = () => {
       
         data-aos="fade-right"
         data-aos-delay="200"
-      className="relative left-[15px] top-[-505px] sm:left-[20px] sm:top-[-430px]  xxl:left-[230px] lg:left-[110px]  md:left-[100px] md:top-[-410px] xxxl:left-[220px] xxxl:top-[-480px] xxl:top-[-460px] xl:top-[-400px] xl:left-[240px] lg:top-[-420px] tracking-wide font-lato text-[12px] xsm:text-[14px] md:text-[16px] text-white">
+      className="relative left-[15px] top-[-465px] sm:left-[20px] sm:top-[-430px]  xxl:left-[230px] lg:left-[110px]  md:left-[100px] md:top-[-410px] xxxl:left-[220px] xxxl:top-[-480px] xxl:top-[-460px] xl:top-[-400px] xl:left-[240px] lg:top-[-420px] tracking-wide font-lato text-[12px] xsm:text-[14px] md:text-[16px] text-white">
         NEW RELEASE
       </span>
       <h1
