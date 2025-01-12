@@ -34,8 +34,8 @@ const CartPage = () => {
   };
 
   return (
-    <section className="xsm:h-[1600px] sm:h-[1800px]">
-      <div className="relative xsm:top-[150px] top-[130px] xsm:h-auto h-[600px]">
+<section className="min-h-screen h-auto xsm:h-[1000px] md:h-[800px] lg:h-[1000px] ">
+        <div className="relative xsm:top-[150px] top-[130px] xsm:h-auto h-[600px]">
         <h1 className="text-3xl font-bold mb-6 text-center text-black font-playfair">
           Shopping Cart
         </h1>
@@ -52,11 +52,11 @@ const CartPage = () => {
            
           </div>
         ) : (
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             {state.items.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center gap-4 bg-white shadow-md rounded-lg p-4 border border-gray-200"
+                className="flex items-center gap-4 bg-white shadow-md rounded-lg md:p-4 border border-gray-200"
               >
                 <Image
                   src={item.image}
@@ -96,7 +96,7 @@ const CartPage = () => {
                   onClick={() =>
                     dispatch({ type: "REMOVE_FROM_CART", payload: item.id })
                   }
-                  className="p-2 rounded-full bg-red-100 hover:bg-red-200 text-red-500"
+                  className="md:p-2  relative right-[15px] rounded-full bg-red-100 hover:bg-red-200 text-red-500"
                 >
                   <AiOutlineDelete size={20} />
                 </button>
@@ -106,7 +106,7 @@ const CartPage = () => {
         )}
 
         {state.items.length > 0 && !orderPlaced && (
-          <div className="mt-8 bg-white shadow-lg rounded-lg p-6 border border-gray-200 relative sm:left-0 left-[20px]">
+          <div className="mt-8 bg-white shadow-lg rounded-lg p-6 border border-gray-200 relative ">
             <div className="flex justify-between text-lg font-semibold text-gray-800 mb-4">
               <span>Subtotal:</span>
               <span>${subtotal.toFixed(2)}</span>

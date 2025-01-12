@@ -75,7 +75,7 @@ const [isHovered, setIsHovered] = useState(false);
 
        
 {showPopup && (
-  <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#735555] to-[#6b3a3a] text-white px-6 py-4 rounded-2xl shadow-2xl animate__animated animate__fadeIn max-w-[300px] w-full transition-all duration-500 z-50">
+  <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#735555] to-[#6b3a3a] text-white px-6 py-4 rounded-2xl shadow-2xl animate__animated animate__fadeIn animate__delay-2s max-w-[300px] w-full transition-all duration-500 z-50">
     <div className="flex flex-col items-center">
       {/* Success Icon */}
       <div className="mb-3">
