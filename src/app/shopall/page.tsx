@@ -21,7 +21,7 @@ const ShopAllPage = () => {
   
   return (
     <>
-    <section className='h-[13800px] md:h-[8450px] sm:h-[13800px] xsm:h-[18600px] lg:h-[5850px] xl:h-[5850px] w-full'>
+    <section className=' min-h-screen h-[13800px] md:h-[8450px] sm:h-[13800px] xsm:h-[18600px] lg:h-[5850px] xl:h-[5850px] w-full'>
    <MenuSidebar/>
    
    <div className=' absolute xl:left-[330px] xl:top-[182px] lg:top-[180px] left-[250px] hidden lg:flex '>
